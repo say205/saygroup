@@ -1,382 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ideabox</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <title>Lava Landing Page HTML Template</title>
-<!--
-
-Lava Landing Page
-
-https://templatemo.com/tm-540-lava-landing-page
-
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-    <script data-ad-client="ca-pub-8139164660596283" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 </head>
 
-<body>
+<body class="home">
+	<div id="wrapper">
+		<header id="header" class="site-header">
+			<div class="container">
+				<div class="site-brand">
+					<a href="index.html"><img src="images/assets/logo.png" alt=""></a>
+				</div><!-- .site-brand -->
+				<div class="right-header">					
+					<nav class="main-menu">
+						<button class="c-hamburger c-hamburger--htx"><span></span></button>
+						<ul>
+							<li>
+								<a href="#">Home<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="sub-menu">
+									<li><a href="index_v2.html">Home v2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Explore<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="sub-menu">
+									<li><a href="explore_layout_one.html">Explore Layout One</a></li>
+									<li><a href="explore_layout_two.html">Explore Layout Two</a></li>
+									<li><a href="explore_layout_three.html">Explore Layout Three</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Pages<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="sub-menu">
+									<li><a href="coming_soon.html">Coming Soon</a></li>
+									<li><a href="about_us.html">About Us</a></li>
+									<li><a href="404.html">404</a></li>
+									<li><a href="login.html">Login</a></li>
+									<li><a href="register.html">Register</a></li>
+									<li><a href="faq.html">Faq</a></li>
+									<li><a href="campaign_detail.html">Campaign details</a></li>
+									<li><a href="create_a_campaign.html">Create a campaign</a></li>
+									<li><a href="update_a_campaign.html">Update a campaign</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="sub-menu">
+									<li><a href="blog_grid.html">Blog Grid</a></li>
+									<li><a href="blog_list.html">Blog List</a></li>
+									<li><a href="blog_list_sidebar.html">Blog Grid Sidebar</a></li>
+									<li><a href="blog_details.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Shop<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<ul class="sub-menu">
+									<li><a href="shop-grid.html">Shop Grid</a></li>
+									<li><a href="shop-details.html">Shop Details</a></li>
+									<li><a href="cart.html">Cart</a></li>
+									<li><a href="checkout.html">Checkout</a></li>
+								</ul>
+							</li>
+							<li><a href="contact_us.html">Contact</a></li>
+						</ul>
+					</nav><!-- .main-menu -->
+					<div class="search-icon">
+						<a href="#" class="ion-ios-search-strong"></a>
+						<div class="form-search"></div>
+						<form action="#" method="POST" id="searchForm">
+					  		<input type="text" value="" name="search" placeholder="Search..." />
+					    	<button type="submit" value=""><span class="ion-ios-search-strong"></span></button>
+					  	</form>
+					</div>	
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
+					<div class="login login-button">
+						<a href="login.html" class="btn-primary">Login</a>	
+						<a href="create_a_campaign.html" class="btn-primary">Create A Listing</a>	
+						<div class="notifications">
+							<div class="icon-bell">
+								<i class="fa fa-bell-o" aria-hidden="true"></i>
+								<span></span>
+							</div>
+							<div class="notifications-list">
+								<div class="notifications-title">
+									<div class="notifications-count">
+										<h3>Notifications</h3>
+										<span>3</span>
+									</div>
+									<div class="notifications-close"><span class="ion-close"></span></div>
+								</div>
+								<ul>
+									<li>
+										<a class="notifications-ava" href="#"><img src="images/author-01.png" alt=""></a>
+										<h3 class="notifications-info"><a href="#">Cody Edwards</a> commented on your latest story</h3>
+									</li>
+									<li>
+										<a class="notifications-ava" href="#"><img src="images/author-02.png" alt=""></a>
+										<h3 class="notifications-info"><a href="#">Jean Reeves</a> loved your latest Photo you poster</h3>
+									</li>
+									<li>
+										<a class="notifications-ava" href="#"><img src="images/author-03.png" alt=""></a>
+										<h3 class="notifications-info"><a href="#">Tyler Warren</a> loved your latest Photo you poster</h3>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="user-profile">
+							<img src="images/staff-picks-author.png" alt="">
+							<div class="user-menu">
+								<ul class="sub-menu">
+									<li><a href="profile.html">My profile</a></li>
+									<li><a href="dashboard.html">Account Dashboard</a></li>
+									<li><a href="account_my_campaigns.html">My Campaigns</a></li>
+									<li><a href="account_pledges_received.html">Pledges Received</a></li>
+									<li><a href="account_backed_campaigns.html">Backed Campaigns</a></li>
+									<li><a href="account_rewards.html">Rewards</a></li>
+									<li><a href="account_payments.html">Payments</a></li>
+									<li><a href="#">Help Center</a></li>
+									<li><a href="#">Log out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- .login -->
 
+				</div><!--. right-header -->
+			</div><!-- .container -->
+		</header><!-- .site-header -->
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            Lava
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="" class="menu-item">About Us</a></li>
-                                    <li><a href="" class="menu-item">Features</a></li>
-                                    <li><a href="" class="menu-item">FAQ's</a></li>
-                                    <li><a href="" class="menu-item">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+		<main id="main" class="site-main">
+			<div class="sideshow">
+				<div class="container">
+					<div class="sideshow-content">
+						<h1 class="wow fadeInUp" data-wow-delay=".1s">Bring new ideas to life, anywhere</h1>
+						<div class="sideshow-description wow fadeInUp" data-wow-delay=".1s">Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu teus.</div>
+						<div class="process wow fadeInUp" data-scroll-nav="1">
+							<div class="raised"><span></span></div>
+							<div class="process-info">
+								<div class="process-funded"><span>46%</span>funded</div>
+								<div class="process-pledged"><span>$46.000</span>pledged</div>
+								<div class="process-backers"><span>32</span>backers</div>
+								<div class="process-time"><span>21</span>days ago</div>
+							</div>
+						</div>
+						<div class="button wow fadeInUp" data-wow-delay="0.1s">
+							<a href="#" class="btn-secondary">See Campaign</a>
+							<a href="#" class="btn-primary">Buy Now</a>
+						</div>
+					</div><!-- .sideshow-content -->
+				</div>
+			</div><!-- .sideshow -->
+			<div class="popular campaign">
+				<div class="container">
+					<h2 class="title wow fadeInUp" data-wow-delay=".1s">What's Popular</h2>
+					<div class="description wow fadeInUp" data-wow-delay=".1s">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+					<div class="campaign-content">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/popular-01.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Design &amp; Art</a>
+										<h3><a href="campaign_detail.html">Poster MockUp Design</a></h3>
+										<div class="campaign-description">However hard he threw himself onto his right, he always rolled back to where he was.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-01.png" alt=""></a>by <a class="author-name" href="#">Andrew Noah</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$610</span>pledged</div>
+												<div class="process-funded"><span>73%</span>funded</div>
+												<div class="process-time"><span>25</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/popular-02.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Book</a>
+										<h3><a href="campaign_detail.html">Svalbard, an arcticficial life</a></h3>
+										<div class="campaign-description">One morning, when Gregor Samsa woke from troubled dreams.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-02.png" alt=""></a>by <a class="author-name" href="#">Samino</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$3900</span>pledged</div>
+												<div class="process-funded"><span>69%</span>funded</div>
+												<div class="process-time"><span>17</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/popular-03.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Film &amp; Video</a>
+										<h3><a href="campaign_detail.html">Interestingly Unique Project</a></h3>
+										<div class="campaign-description">However hard he threw himself onto his right, he always rolled back to where he was.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-03.png" alt=""></a>by <a class="author-name" href="#">Sabato Alterio</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$1200</span>pledged</div>
+												<div class="process-funded"><span>110%</span>funded</div>
+												<div class="process-time"><span>23</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- .section-content -->
+				</div>
+			</div><!-- .popular -->
+			<div class="explore">
+				<div class="container">
+					<h2 class="title wow fadeInUp" data-wow-delay=".1s">Explore Ideas</h2>
+					<div class="description wow fadeInUp" data-wow-delay=".1s">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+					<div class="explore-content">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-01.jpg" alt="">
+										<span>Design &amp; Art</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-02.jpg" alt="">
+										<span>Film &amp; Video</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-03.jpg" alt="">
+										<span>Book</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-04.jpg" alt="">
+										<span>Performances</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-05.jpg" alt="">
+										<span>Crafts</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-06.jpg" alt="">
+										<span>Technology</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-07.jpg" alt="">
+										<span>Food</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+								<div class="explore-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="explore-overlay" href="#">
+										<img src="images/explore-08.jpg" alt="">
+										<span>Game</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .explore -->
+			<div class="staff-picks">
+				<div class="container">
+					<div class="border-title">
+						<h2 class="title left-title wow fadeInUp" data-wow-delay=".1s">Staff Picks</h2>
+						<div class="description left-description wow fadeInUp" data-wow-delay=".1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+					</div>
+					<div class="staff-picks-content">
+						<div class="staff-picks-slider slider-controls-top owl-carousel">
+							<div class="staff-picks-item clearfix">
+								<a class="staff-picks-image" href="campaign_detail.html"><img src="images/staff-picks.jpg" alt=""></a>
+								<div class="staff-picks-item-content staff-picks-box wow fadeInUp" data-wow-delay=".1s">
+									<a href="#" class="category">Design &amp; Art</a>
+									<h3><a href="campaign_detail.html">Creative Furniture Designs</a></h3>
+									<div class="staff-picks-description">He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</div>
+									<div class="staff-picks-author">
+										<div class="author-profile">
+											<a class="author-avatar" href="#"><img src="images/staff-picks-author.png" alt=""></a>by <a class="author-name" href="#">Andrew Noah</a>
+										</div>
+										<div class="author-address"><span class="ion-location"></span>Melbourne, Victoria, AU</div>
+									</div>
+									<div class="process">
+										<div class="raised"><span></span></div>
+										<div class="process-info">
+											<div class="process-pledged"><span>$10000</span>pledged</div>
+											<div class="process-funded"><span>81%</span>funded</div>
+											<div class="process-time"><span>37</span>backers</div>
+											<div class="process-time"><span>23</span>days ago</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="staff-picks-item clearfix">
+								<a class="staff-picks-image" href="campaign_detail.html"><img src="images/staff-picks.jpg" alt=""></a>
+								<div class="staff-picks-item-content staff-picks-box wow fadeInUp" data-wow-delay=".1s">
+									<a href="#" class="category">Design &amp; Art</a>
+									<h3><a href="campaign_detail.html">Creative Furniture Designs</a></h3>
+									<div class="staff-picks-description">He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</div>
+									<div class="staff-picks-author">
+										<div class="author-profile">
+											<a class="author-avatar" href="#"><img src="images/staff-picks-author.png" alt=""></a>by <a class="author-name" href="#">Andrew Noah</a>
+										</div>
+										<div class="author-address"><span class="ion-location"></span>Melbourne, Victoria, AU</div>
+									</div>
+									<div class="process">
+										<div class="raised"><span></span></div>
+										<div class="process-info">
+											<div class="process-pledged"><span>$10000</span>pledged</div>
+											<div class="process-funded"><span>81%</span>funded</div>
+											<div class="process-time"><span>37</span>backers</div>
+											<div class="process-time"><span>23</span>days ago</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .staff-picks -->
+			<div class="latest campaign">
+				<div class="container">
+					<h2 class="title wow fadeInUp" data-wow-delay=".1s">Latest Campaigns</h2>
+					<div class="description wow fadeInUp" data-wow-delay=".1s">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+					<div class="campaign-content">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-01.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Crafts</a>
+										<h3><a href="campaign_detail.html">The Oreous Pillow</a></h3>
+										<div class="campaign-description">A watch designed to be an heirloom to be passed down to the next generation.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-01.png" alt=""></a>by <a class="author-name" href="#">Sabato Alterio</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$630</span>pledged</div>
+												<div class="process-funded"><span>26%</span>funded</div>
+												<div class="process-time"><span>2</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-02.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Book</a>
+										<h3><a href="campaign_detail.html">The Everlast Notebook</a></h3>
+										<div class="campaign-description">One smart, reusable notebook to last the rest of your life? That's not magic, that's the Everlast.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-02.png" alt=""></a>by <a class="author-name" href="#">Samino</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$370</span>pledged</div>
+												<div class="process-funded"><span>9%</span>funded</div>
+												<div class="process-time"><span>9</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-03.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Perfomances</a>
+										<h3><a href="campaign_detail.html">Uncompromising Ski Gear</a></h3>
+										<div class="campaign-description">The Orsden Slope Pants don't compromise delivering performance, fit, and value directly to you</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-03.png" alt=""></a>by <a class="author-name" href="#">Andrew Noah</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$610</span>pledged</div>
+												<div class="process-funded"><span>73%</span>funded</div>
+												<div class="process-time"><span>14</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-04.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Technology</a>
+										<h3><a href="campaign_detail.html">Smart Wallet with Solar Charge</a></h3>
+										<div class="campaign-description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-01.png" alt=""></a>by <a class="author-name" href="#">Andrew Noah</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$3670</span>pledged</div>
+												<div class="process-funded"><span>58%</span>funded</div>
+												<div class="process-time"><span>21</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-05.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Technology</a>
+										<h3><a href="campaign_detail.html">Redefine Your VR Experience</a></h3>
+										<div class="campaign-description">I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-02.png" alt=""></a>by <a class="author-name" href="#">Sabato Alterio</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$1950</span>pledged</div>
+												<div class="process-funded"><span>70%</span>funded</div>
+												<div class="process-time"><span>23</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6">
+								<div class="campaign-item wow fadeInUp" data-wow-delay=".1s">
+									<a class="overlay" href="campaign_detail.html">
+										<img src="images/latest-06.jpg" alt="">
+										<span class="ion-ios-search-strong"></span>
+									</a>
+									<div class="campaign-box">
+										<a href="#" class="category">Design &amp; Art</a>
+										<h3><a href="campaign_detail.html">Bring back Fun House</a></h3>
+										<div class="campaign-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</div>
+										<div class="campaign-author"><a class="author-icon" href="#"><img src="images/author-03.png" alt=""></a>by <a class="author-name" href="#">Samino</a></div>
+										<div class="process">
+											<div class="raised"><span></span></div>
+											<div class="process-info">
+												<div class="process-pledged"><span>$3900</span>pledged</div>
+												<div class="process-funded"><span>69%</span>funded</div>
+												<div class="process-time"><span>33</span>days ago</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="latest-button wow fadeInUp" data-wow-delay=".1s"><a href="#" class="btn-primary">View all Campaigns</a></div>
+				</div>
+			</div><!-- .latest -->
+			<div class="partners">
+				<div class="container">
+					<div class="partners-slider owl-carousel">
+						<div><a href="#"><img src="images/partner-01.png" alt=""></a></div>
+						<div><a href="#"><img src="images/partner-02.png" alt=""></a></div>
+						<div><a href="#"><img src="images/partner-03.png" alt=""></a></div>
+						<div><a href="#"><img src="images/partner-04.png" alt=""></a></div>
+						<div><a href="#"><img src="images/partner-05.png" alt=""></a></div>
+						<div><a href="#"><img src="images/partner-06.png" alt=""></a></div>
+					</div>
+				</div>
+			</div><!-- .partners -->
+		</main><!-- .site-main -->
 
-
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
-
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Simple App that we <em>CREATE</em></h1>
-                        <p>Lava <a href="#">HTML landing page</a> template is provided by <a href="#">TemplateMo</a>.
-                           You can modify and use it for your commercial websites for free of charge. This template is last updated on 29 Oct 2019.</p> 
-                        <a href="#about" class="main-button-slider">KNOW US BETTER</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>01</h2>
-                            <img src="assets/images/features-icon-1.png" alt="">
-                            <h4>Trend Analysis</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-                            <a href="#testimonials" class="main-button">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>02</h2>
-                            <img src="assets/images/features-icon-2.png" alt="">
-                            <h4>Site Optimization</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-                            <a href="#testimonials" class="main-button">
-                                Discover More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>03</h2>
-                            <img src="assets/images/features-icon-3.png" alt="">
-                            <h4>Email Design</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-                            <a href="#testimonials" class="main-button">
-                                More Detail
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <div class="left-image-decor"></div>
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="promotion">
-        <div class="container">
-            <div class="row">
-                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                    <ul>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/about-icon-01.png" alt="">
-                            <div class="text">
-                                <h4>Vestibulum pulvinar rhoncus</h4>
-                                <p>Please do not redistribute this template ZIP file for a download purpose. You may <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for
-                            additional licensing of our template or to get a PSD file.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/about-icon-02.png" alt="">
-                            <div class="text">
-                                <h4>Sed blandit quam in velit</h4>
-                                <p>You can <a rel="nofollow"
-                                        href="https://templatemo.com/tm-540-lava-landing-page">download Lava
-                                        Template</a> from our website. Duis viverra, ipsum et scelerisque placerat, orci
-                                    magna consequat ligula.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/about-icon-03.png" alt="">
-                            <div class="text">
-                                <h4>Aenean faucibus venenatis</h4>
-                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
-                                    maximus porta. Curabitur tristique lacus.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <div class="right-image-decor"></div>
-
-    <!-- ***** Testimonials Starts ***** -->
-    <section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="center-heading">
-                        <h2>What They Think <em>About Us</em></h2>
-                        <p>Suspendisse vitae laoreet mauris. Fusce a nisi dapibus, euismod purus non, convallis odio.
-                            Donec vitae magna ornare, pellentesque ex vitae, aliquet urna.</p>
-                    </div>
-                </div>
-                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item service-item">
-                            <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Author One"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>Jonathan Smart</h4>
-                                <p>“Nullam hendrerit, elit a semper pharetra, ipsum nibh tristique tortor, in tempus
-                                    urna elit in mauris.”</p>
-                                <span>Besta CTO</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Second Author"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>Martino Tino</h4>
-                                <p>“Morbi non mi luctus felis molestie scelerisque. In ac libero viverra, placerat est
-                                    interdum, rhoncus leo.”</p>
-                                <span>Web Analyst</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Author Third"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>George Tasa</h4>
-                                <p>“Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,
-                                    congue a fringilla sed, maximus et urna.”</p>
-                                <span>System Admin</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Fourth Author"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>Sir James</h4>
-                                <p>"Fusce rutrum in dolor sit amet lobortis. Ut at vehicula justo. Donec quam dolor,
-                                    congue a fringilla sed, maximus et urna."</p>
-                                <span>New Villager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials Ends ***** -->
-
-
-    <!-- ***** Footer Start ***** -->
-    <footer id="contact-us">
-        <div class="container">
-            <div class="footer-content">
-                <div class="row">
-                    <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="contact-form">
-                            <form id="contact" action="" method="post">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
-                                                style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
-                                                required="" style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button">Send Message
-                                                Now</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ***** Contact Form End ***** -->
-                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>Lava</em></h2>
-                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
-                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
-                            <br><br>If you need this contact form to send email to your inbox, you may follow our <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> page
-                            for more detail.</p>
-                        <ul class="social">
-                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>Copyright &copy; 2020 Lava Landing Page
-
-                        | Designed by <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
+		<footer id="footer" class="site-footer">
+			<div class="footer-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-4 col-4">
+							<div class="footer-menu-item">
+								<h3>Our company</h3>
+								<ul>
+									<li><a href="#">What is Startup Idea</a></li>
+									<li><a href="about_us.html">About us</a></li>
+									<li><a href="#">How It Works</a></li>
+									<li><a href="#">What Is This</a></li>
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">Press</a></li>
+									<li><a href="#">Starts</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-4">
+							<div class="footer-menu-item">
+								<h3>Campaign</h3>
+								<ul>
+									<li><a href="#">Start Your Campaign</a></li>
+									<li><a href="#">Pricing Campaign</a></li>
+									<li><a href="#">Campaign Support</a></li>
+									<li><a href="#">Trust &amp; Safety</a></li>
+									<li><a href="#">Support</a></li>
+									<li><a href="#">Terms of Use</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-4">
+							<div class="footer-menu-item">
+								<h3>Explore</h3>
+								<ul>
+									<li><a href="#">Design &amp; Art</a></li>
+									<li><a href="#">Crafts</a></li>
+									<li><a href="#">Film &amp; Video</a></li>
+									<li><a href="#">Food</a></li>
+									<li><a href="#">Book</a></li>
+									<li><a href="#">Games</a></li>
+									<li><a href="#">Technology</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-12 col-12">
+							<div class="footer-menu-item newsletter">
+								<h3>Newsletter</h3>
+								<div class="newsletter-description">Private, secure, spam-free</div>
+								<form action="s" method="POST" id="newsletterForm">
+							  		<input type="text" value="" name="s" placeholder="Enter your email..." />
+							    	<button type="submit" value=""><span class="ion-android-drafts"></span></button>
+							  	</form>
+							  	<div class="follow">
+							  		<h3>Follow us</h3>
+							  		<ul>
+							  			<li class="facebook"><a target="_Blank" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							  			<li class="twitter"><a target="_Blank" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							  			<li class="instagram"><a target="_Blank" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							  			<li class="google"><a target="_Blank" href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							  			<li class="youtube"><a target="_Blank" href="http://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							  		</ul>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .footer-menu -->
+			<div class="footer-copyright">
+				<div class="container">
+					<p class="copyright">© 2021 SayThemes. All Rights Reserved.</p>
+					<a href="#" class="back-top">Back to top<span class="ion-android-arrow-up"></span></a>
+				</div>
+			</div>
+		</footer><!-- site-footer -->
+	</div><!-- #wrapper -->
+	<!-- jQuery -->    
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="libs/popper/popper.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="libs/wow/wow.min.js"></script>
+    <script type="text/javascript" src="libs/isotope/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <!-- orther script -->
+    <script  type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
