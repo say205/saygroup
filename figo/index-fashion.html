@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figo</title>
+
+	<!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- jQuery -->    
+    <script src="js/jquery-1.12.4.js"></script>
+	<script src="libs/popper/popper.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slick/jquery.zoom.min.js"></script>
+	<script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <!-- orther script -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header" class="site-header header-3">
+			<div class="mid-header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="site-brand align-left">
+								<a href="#" title="Figo">Figo</a>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<nav class="pri-menu align-center">
+								<ul class="main-menu">
+									<li class="current-menu-item"><a href="#">Home</a></li>
+									<li><a href="#">Men</a></li>
+									<li><a href="#">Woman</a></li>
+									<li>
+										<a href="#">Shop</a>
+										<ul class="sub-menu" style="background-image: url(images/menu-banner.jpg);">
+											<li class="col-sm-3">
+												<a href="#">Shop Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Shop - Archive</a></li>
+													<li><a href="#">Shop - Collection</a></li>
+													<li><a href="#">Shop - Category</a></li>
+													<li><a href="#">Shop - Lookbook</a></li>
+													<li><a href="#">Shop - Left Sidebar</a></li>
+													<li><a href="#">Shop - Right Sidebar</a></li>
+													<li><a href="#">Shop - List</a></li>
+													<li><a href="#">Shop - Grid 3 items</a></li>
+													<li><a href="#">Shop - Grid 4 items</a></li>
+													<li><a href="#">Shop - Grid 5 items</a></li>
+													<li><a href="#">Pagination - Default</a></li>
+													<li><a href="#">Pagination - Load more</a></li>
+													<li><a href="#">Pagination - Infinity Load</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Product Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Product - Style 1</a></li>
+													<li><a href="#">Product - Style 2</a></li>
+													<li><a href="#">Product - Style 3</a></li>
+													<li><a href="#">Simple Product</a></li>
+													<li><a href="#">Variable Product</a></li>
+													<li><a href="#">Grouped Product</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Orther Pages</a>
+												<ul class="sub-menu">
+													<li><a href="#">Cart</a></li>
+													<li><a href="#">Checkout</a></li>
+													<li><a href="#">My Account</a></li>
+													<li><a href="#">Wishlist</a></li>
+													<li><a href="#">Order Tracking</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Pages</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav><!-- .pri-menu -->
+						</div>
+						<div class="col-sm-2">
+							<div class="button-icon-header align-right">
+								<div class="button-inline button-serch">
+									<a href="#" title="Search"><i class="fal fa-search"></i></a>
+								</div>
+								<div class="button-inline button-wishlist">
+									<a href="#" title="View Wishlist"><i class="fal fa-heart"></i></a>
+								</div>
+								<div class="button-inline button-user">
+									<a href="#" title="View My Account"><i class="fal fa-user"></i></a>
+								</div>
+								<div class="button-inline button-cart">
+									<a href="#" title="View Cart">
+										<i class="fal fa-shopping-cart"></i>
+										<span class="items-number">0</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .mid-header -->
+			<div class="promo promo-2 align-center">
+				<div class="container-fluid">
+					<a href="#" title="Enjoy a Free Sample With Any Order">Enjoy our sale, Free shipping and returns</a>
+					<a href="#" class="remove-promo"><i class="fal fa-times"></i></a>
+				</div>
+			</div><!-- .promo -->
+		</header><!-- .site-header -->
+
+		<main id="main" class="site-main">
+			<div class="main-slider slider-3">
+				<div class="item">
+					<div class="item-thumb"><img src="images/main-slider-03.jpg" alt="fashion trends of"></div>
+					<div class="item-content">
+						<h5>fashion trends of</h5>
+						<h2>spring/summer <br> 2019</h2>
+						<div class="slider-button">
+							<a href="#" class="pri-btn">discover men's</a>
+							<a href="#" class="pri-btn">discover WOmen's</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-thumb"><img src="images/main-slider-03.jpg" alt="fashion trends of"></div>
+					<div class="item-content">
+						<h5>fashion trends of</h5>
+						<h2>spring/summer <br> 2019</h2>
+						<div class="slider-button">
+							<a href="#" class="pri-btn">discover men's</a>
+							<a href="#" class="pri-btn">discover WOmen's</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- .main-slider -->
+			<div class="container">
+				<div class="fashion-banner home-banner mgt80">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="banner-left banner-item">
+								<img src="images/product-banner.png" alt="WATER RESISTANT">
+								<div class="banner-info">
+									<h3>WATER RESISTANT <br> PADDED PARKA</h3>
+									<a class="more" href="#">Discover Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="banner-right banner-item">
+								<img src="images/product-banner.png" alt="LEATHER-LOOK">
+								<div class="banner-info">
+									<h3>LEATHER-LOOK <br> BOMBER</h3>
+									<a class="more" href="#">Discover Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- .product-banners -->
+				<div class="trending mgt80">
+					<h2 class="title align-center">Trending styles</h2>
+					<div class="slick5colfulllong trending-slider">
+						<div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Certified Organic BB Cream"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Organic Creme Eyeshadow"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Organic Creme Eyeshadow</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Cras nec congue"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Cras nec congue</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Certified Organic BB Cream"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="product">
+					        <div class="inner-product">
+					        	<div class="entry-wrap-thumbnail">
+					        		<div class="entry-thumbnail">
+					        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+					        		</div>
+					        		<div class="product-nav">
+					        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+					        			<a class="add-to-cart" href="#">Add to cart</a>
+					        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+					        		</div>
+					        	</div>
+					        	<div class="entry-wrap-content">
+					        		<div class="entry-content">
+						        		<div class="product-title">
+						        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+						        		</div>
+						        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+						        	</div>
+					        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+					        	</div>
+					        </div>
+					    </div>
+					</div><!-- .trending-slider -->
+				</div><!-- .trending -->
+				<div class="homefashion-deals banner-fullwidth mgt80">
+					<div class="banner-item">
+						<img src="images/fashion-deal.jpg" alt="baby capsule">
+						<div class="banner-info">
+							<div class="banner-text">
+								<h4>baby capsule</h4>
+								<h2>Sale Up to 50%</h2>
+								<a href="#" class="toshop border-btn">Shop Now</a>
+				        		<div class="countdown-data" data-end="1584107650" data-gmt="7">
+									<div class="data"><span class="days time">0</span><span class="text">Days</span></div>
+									<div class="data"><span class="hours time">0</span><span class="text">Hours</span></div>
+									<div class="data"><span class="minutes time">0</span><span class="text">Mins</span></div>
+									<div class="data"><span class="seconds time">0</span><span class="text">Secs</span></div>
+								</div>
+							</div>
+						</div>
+					</div><!-- .banner-item -->
+				</div><!-- .homefashion-deals -->
+				<div class="home-newin new-arrivals mgt80">
+					<h2 class="title align-center">New arrivals</h2>
+					<div class="menu-tab align-center">
+						<ul>
+							<li class="active" data-tab="men">Men</li>
+							<li data-tab="woman">Woman</li>
+							<li data-tab="accessories">Accessories</li>
+						</ul>
+					</div><!-- .menu-tab -->
+					<div class="content-tab">
+						<div id="men" class="tab active">
+							<div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-wrap-thumbnail">
+							        		<div class="entry-thumbnail">
+							        			<a href="#"><img src="images/slider5col.jpg" alt="Certified Organic BB Cream"></a>
+							        		</div>
+							        		<div class="product-nav">
+							        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+							        			<a class="add-to-cart" href="#">Add to cart</a>
+							        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+							        		</div>
+							        	</div>
+						        		<div class="entry-label">
+											<span class="entry-badge">Hot</span>
+											<span class="entry-sale">-20%</span>
+										</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Organic Creme Eyeshadow"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Organic Creme Eyeshadow</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Cras nec congue"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Cras nec congue</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Certified Organic BB Cream"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Organic Creme Eyeshadow"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Organic Creme Eyeshadow</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Cras nec congue"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Cras nec congue</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Certified Organic BB Cream"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <a class="more-btn" href="#">View more products</a>
+						</div>
+						<div id="woman" class="tab">
+							<div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Mineral Mattifying Powder"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Mineral Mattifying Powder</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <a class="more-btn" href="#">View more products</a>
+						</div>
+						<div id="accessories" class="tab">
+							<div class="product">
+						        <div class="inner-product">
+						        	<div class="entry-wrap-thumbnail">
+						        		<div class="entry-thumbnail">
+						        			<a href="#"><img src="images/slider5col.jpg" alt="Cras nec congue"></a>
+						        		</div>
+						        		<div class="product-nav">
+						        			<a class="quickview" href="#"><i class="fal fa-eye"></i></a>
+						        			<a class="add-to-cart" href="#">Add to cart</a>
+						        			<a class="compare" href="#"><i class="fal fa-retweet"></i></a>
+						        		</div>
+						        	</div>
+						        	<div class="entry-wrap-content">
+						        		<div class="entry-content">
+							        		<div class="product-title">
+							        			<h3 class="entry-title"><a href="#">Cras nec congue</a></h3>
+							        		</div>
+							        		<div class="product-price"><span class="priceSale amout">$29.50</span></div>
+							        	</div>
+						        		<a href="#" class="add_to_wishlist"><i class="fal fa-heart"></i></a>
+						        	</div>
+						        </div>
+						    </div>
+						    <a class="more-btn" href="#">View more products</a>
+						</div>
+					</div><!-- .content-tab -->
+				</div><!-- .home-newin -->
+			</div>
+			<div class="home-blogs blog-2 mgt90" style="background-image: url(images/latest-blog.png);">
+				<div class="container">
+					<h2 class="title align-center">latest Blog</h2>
+					<div class="blog-slider slick2coldots">
+						<article class="post">
+							<div class="entry-thumbnail"><a href="#"><img src="images/blog-2.jpg" alt="6 Ways to Make Your Foundation Look Like a Second Skin"></a></div>
+							<div class="entry-content">
+								<div class="post-cat"><a href="#">Mode</a></div>
+								<h3><a href="#">6 Ways to Make Your Foundation Look Like a Second Skin</a></h3>
+								<div class="entry-meta">
+									<a class="entry-date" href="#">Jan 08, 2019</a>
+									<a class="entry-comments" href="#">25 comments</a>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="entry-thumbnail"><a href="#"><img src="images/blog-2.jpg" alt="How to Get Your Best Party Skin Ever"></a></div>
+							<div class="entry-content">
+								<div class="post-cat"><a href="#">Mode</a></div>
+								<h3><a href="#">How to Get Your Best Party Skin Ever</a></h3>
+								<div class="entry-meta">
+									<a class="entry-date" href="#">Jan 08, 2019</a>
+									<a class="entry-comments" href="#">25 comments</a>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<div class="entry-thumbnail"><a href="#"><img src="images/blog-2.jpg" alt="Rosie Hungtington Whiteley’s 5-Second Trick for Faking an Easy Bob"></a></div>
+							<div class="entry-content">
+								<div class="post-cat"><a href="#">Mode</a></div>
+								<h3><a href="#">Rosie Hungtington Whiteley’s 5-Second Trick for Faking an Easy Bob</a></h3>
+								<div class="entry-meta">
+									<a class="entry-date" href="#">Jan 08, 2019</a>
+									<a class="entry-comments" href="#">25 comments</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div><!-- .home-blogs -->
+			<div class="home-instagram instagram-2 mgt90">
+				<h2 class="title align-center">Our Instagram</h2>
+				<p class="description align-center">Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="instagram-content">
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.1.jpg" alt="Instagram"></a>
+					</div>
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.2.jpg" alt="Instagram"></a>
+					</div>
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.1.jpg" alt="Instagram"></a>
+					</div>
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.2.jpg" alt="Instagram"></a>
+					</div>
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.1.jpg" alt="Instagram"></a>
+					</div>
+					<div class="instagram-item">
+						<a href="#"><img src="images/insta-2.2.jpg" alt="Instagram"></a>
+					</div>
+				</div>
+			</div><!-- .home-instagram -->
+			<div class="home-block mgt60">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="block-item">
+								<i class="fal fa-map-marker-alt"></i>
+								<span>Find our location</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block-item">
+								<i class="fal fa-alarm-clock"></i>
+								<span>24/7 support online</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block-item">
+								<i class="fal fa-piggy-bank"></i>
+								<span>30 days return</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="block-item">
+								<i class="fal fa-credit-card"></i>
+								<span>Secure Payments</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .home-block -->
+		</main><!-- .site-main -->
+
+		<footer id="footer" class="site-footer footer-3">
+			<div class="newsletter-2">
+				<div class="container">
+					<h3 class="widget-title">Sign up for news & get <span>20% off</span></h3>
+					<div class="widget-content">
+						<form action="#" method="post">
+						  	<div class="tnp-field tnp-field-email">
+						    	<input type="email" class="tnp-email" name="ne" value="" required placeholder="Your email Address">
+						  	</div>
+						  	<div class="tnp-field tnp-field-submit">
+						    	<input type="submit" class="tnp-submit" value="Subscribe">
+						  	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-main">
+					<div class="row">
+						<div class="col-md-5">
+							<aside class="widget widget-bottom widget-contact">
+								<h3 class="widget-title">Contact Us</h3>
+								<div class="widget-content">
+									<ul>
+										<li><i class="fal fa-map-marker-alt"></i>5th Avenue at St. Marks Place, Cathedral District Brooklyn.</li>
+										<li><i class="fal fa-mobile-android"></i>877-834-1434</li>
+										<li><i class="fal fa-envelope"></i>pixelgeeklab@gmail.com</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-info">
+								<h3 class="widget-title">Company Info</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="#">Affiliates</a></li>
+										<li><a href="#">Corporate Information</a></li>
+										<li><a href="#">Sustainability</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Support</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Customer Service</a></li>
+										<li><a href="#">Shipping</a></li>
+										<li><a href="#">Returns & Exchanges</a></li>
+										<li><a href="#">Gift Cards</a></li>
+										<li><a href="#">Store Finder</a></li>
+										<li><a href="#">Site Map</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-3">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Privacy & Terms</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Privacy & Security</a></li>
+										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#">Policy on Trafficking</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div><!-- .footer-main -->
+				<div class="footer-bottom">
+					<div class="site-brand">
+						<a href="#" title="Figo">Figo</a>
+					</div>
+					<div class="copyright">© 2021 <a href="#">SayGroup</a> - Elite ThemeForest Author</div>
+					<div class="payment"><a href="#"><img src="images/assets/payment.png" alt="payment"></a></div>
+				</div>
+			</div><!-- .container -->
+		</footer><!-- site-footer -->
+	</div><!-- #wrapper -->
+</body>
+</html>
