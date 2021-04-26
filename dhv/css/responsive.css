@@ -151,6 +151,7 @@
 		padding: 16px;
 		border-top: 1px solid #0454b6;
 		padding-bottom: 0;
+		display: block;
 	}
 	.main-menu ul.main-menu-mb-top li{
 		display: inline-block;
