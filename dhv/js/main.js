@@ -51,6 +51,8 @@
 	  	$( '.head-bar a' ).on( 'click', function(e) {
 			e.preventDefault();
 		    $( this ).parents( 'body' ).find( '.main-menu' ).toggleClass( 'open' );
+		    $( this ).parents( '.site-header' ).toggleClass( 'open' );
+		    $( this ).toggleClass( 'open' );
 		});
 		
 

@@ -239,7 +239,7 @@ ul li{
 }
 .top-header ul li a{
 	color: #ddd;
-	font-size: 10px;
+	font-size: 12px;
 }
 .top-header ul li:hover a{
 	text-decoration: underline;
@@ -372,6 +372,10 @@ ul li{
     width: 1px;
     height: 31px;
     background: #0758bd;
+}
+.main-menu > ul.main-menu-mb-top,
+.main-menu > ul.main-menu-mb-bottom{
+	display: none;
 }
 /*==========================================================
 	5. CONTENT
@@ -1101,7 +1105,7 @@ a.btn:hover:before{
 	position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 998;
     display: none;
 }
 .backtop:hover,

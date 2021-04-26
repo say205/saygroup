@@ -51,7 +51,6 @@
 		top: 48px;
 		right: -100%;
     	width: 100%;
-    	bottom: 0;
     	overflow-x: hidden;
     	overflow-y: auto;
 		background-color: #094484;
@@ -64,6 +63,8 @@
 		opacity: 1;
 		visibility: visible;
 		right: 0px;
+		overflow-y: auto;
+    	bottom: 0;	
 	}
 	.mid-header{
 		position: static;
@@ -126,6 +127,66 @@
 	}
 	.main-menu li.active > a:after{
 		background-color: #ddd;
+	}
+	.mid-header.sticky .logo-menu{
+		display: none;
+	}
+	.site-header.open:before{
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 999;
+	}
+	.main-menu > ul > li > a{
+		font-weight: 400;
+	}
+	.head-bar a.open i:before{
+		content: '\f00d';
+	}
+	.main-menu ul.main-menu-mb-top{
+		padding: 16px;
+		border-top: 1px solid #0454b6;
+		padding-bottom: 0;
+	}
+	.main-menu ul.main-menu-mb-top li{
+		display: inline-block;
+	}
+	.main-menu ul.main-menu-mb-top li a,
+	.main-menu ul.main-menu-mb-bottom li a{
+		border: 0;
+		padding: 17px 8px;
+		font-size: 16px;
+		border: 0;
+	    padding: 0 !important;
+	    font-size: 13px !important;
+	    margin-right: 14px;
+	    margin-bottom: 15px;
+	    font-weight: 400;
+	}
+	.main-menu ul.main-menu-mb-bottom{
+		display: flex;
+	}
+	.main-menu ul.main-menu-mb-bottom li{
+		-webkit-box-flex: 0 !important;
+	    -ms-flex: 0 0 33.33333% !important;
+	    flex: 0 0 33.33333% !important;
+	    max-width: 33.33333% !important;
+	    border-top: 1px solid #0454b6;
+		border-right: 1px solid #0454b6;
+		border-bottom: 1px solid #0454b6;
+	}
+	.main-menu ul.main-menu-mb-bottom li a{
+		margin-right: 0;
+		margin-bottom: 0;
+		text-align: center;
+		padding: 10px 0 !important;
+	}
+	.main-menu ul.main-menu-mb-bottom li:last-child{
+		border-right: 1px solid #0454b6;
 	}
 }
 
@@ -192,6 +253,30 @@
 	.section-gallery .gallery-item{
 		margin-bottom: 30px;
 	}
+	.section-affiliated-units .flex{
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.main-slider .item .item-content{
+		max-width: 100%;
+	}
+	.section-affiliated-units li{
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 25%;
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	    padding: 0 15px;
+	}
+	.section-affiliated-units ul{
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	.section-slogan{
+		padding: 80px 0;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -254,13 +339,10 @@
 	}
 	.footer-logo{
 		width: 100%;
-		text-align: center;
 	}
-	.footer-top{
-		text-align: center;
-	}
-	.socials{
-		text-align: center;
+	.socials,
+	.copyright{
+		text-align: left;
 	}
 	.admissions-item{
 		display: none;
@@ -362,5 +444,15 @@
 	}
 	.admissions-content h2{
 		font-size: 16px;
+	}
+	.main-slider .item img{
+		height: 380px;
+	}
+	.main-slider .item .container{
+		top: 55%;
+	}
+	.slogan-left h2 {
+	    font-size: 24px;
+	    line-height: 32px;
 	}
 }
