@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mystical';
+    src: url('Mystical.eot');
+    src: url('Mystical.eot?#iefix') format('embedded-opentype'),
+        url('Mystical.woff2') format('woff2'),
+        url('Mystical.woff') format('woff'),
+        url('Mystical.ttf') format('truetype'),
+        url('Mystical.svg#Mystical') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

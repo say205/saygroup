@@ -97,6 +97,27 @@ var GLF = GLF || {};
 				prevArrow: '<i class="fal fa-long-arrow-left"></i>',
 	      		nextArrow: '<i class="fal fa-long-arrow-right"></i>',
 			});
+			
+			var product_thumb = $( '.product-main-image' ).slick({
+				infinite: true,
+				arrows: true,
+				slidesToShow: 1,
+				prevArrow: '<i class="far fa-chevron-left"></i>',
+	      		nextArrow: '<i class="far fa-chevron-right"></i>',
+			});
+
+			product_thumb.on('afterChange', function(event, slick, currentSlide, nextSlide){
+			  	$('.product-control a').removeClass( 'active' );
+			  	$('.product-control a[data-index="' + currentSlide + '"]').addClass( 'active' );
+			});
+
+			$('.product-control a').on( 'click', function(e){
+				e.preventDefault();
+				var index = $(this).data('index');
+				$('.product-control a').not( this ).removeClass( 'active' );
+				$( this ).addClass( 'active' );
+				product_thumb.slick('slickGoTo', index);
+			});
         },
         
         countdown: function() {
@@ -280,6 +301,10 @@ var GLF = GLF || {};
 			        sortby_container.removeClass( 'open' );
 			    }
 			});
+			$( '.filter-column h3' ).on( 'click', function(e) {
+	    		e.preventDefault();
+		    	$( this ).parent().toggleClass( 'notactive' );
+	    	});
         },
     }
 

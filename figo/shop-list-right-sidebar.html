@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figo</title>
+
+	<!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- jQuery -->    
+    <script src="js/jquery-1.12.4.js"></script>
+	<script src="libs/popper/popper.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slick/jquery.zoom.min.js"></script>
+	<script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <!-- orther script -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header" class="site-header header-3">
+			<div class="mid-header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="site-brand align-left">
+								<a href="#" title="Figo">Figo</a>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<nav class="pri-menu align-center">
+								<ul class="main-menu">
+									<li class="current-menu-item"><a href="#">Home</a></li>
+									<li><a href="#">Men</a></li>
+									<li><a href="#">Woman</a></li>
+									<li>
+										<a href="#">Shop</a>
+										<ul class="sub-menu" style="background-image: url(images/menu-banner.jpg);">
+											<li class="col-sm-3">
+												<a href="#">Shop Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Shop - Archive</a></li>
+													<li><a href="#">Shop - Collection</a></li>
+													<li><a href="#">Shop - Category</a></li>
+													<li><a href="#">Shop - Lookbook</a></li>
+													<li><a href="#">Shop - Left Sidebar</a></li>
+													<li><a href="#">Shop - Right Sidebar</a></li>
+													<li><a href="#">Shop - List</a></li>
+													<li><a href="#">Shop - Grid 3 items</a></li>
+													<li><a href="#">Shop - Grid 4 items</a></li>
+													<li><a href="#">Shop - Grid 5 items</a></li>
+													<li><a href="#">Pagination - Default</a></li>
+													<li><a href="#">Pagination - Load more</a></li>
+													<li><a href="#">Pagination - Infinity Load</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Product Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Product - Style 1</a></li>
+													<li><a href="#">Product - Style 2</a></li>
+													<li><a href="#">Product - Style 3</a></li>
+													<li><a href="#">Simple Product</a></li>
+													<li><a href="#">Variable Product</a></li>
+													<li><a href="#">Grouped Product</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Orther Pages</a>
+												<ul class="sub-menu">
+													<li><a href="#">Cart</a></li>
+													<li><a href="#">Checkout</a></li>
+													<li><a href="#">My Account</a></li>
+													<li><a href="#">Wishlist</a></li>
+													<li><a href="#">Order Tracking</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Pages</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav><!-- .pri-menu -->
+						</div>
+						<div class="col-sm-2">
+							<div class="button-icon-header align-right">
+								<div class="button-inline button-serch">
+									<a href="#" title="Search"><i class="fal fa-search"></i></a>
+								</div>
+								<div class="button-inline button-wishlist">
+									<a href="#" title="View Wishlist"><i class="fal fa-heart"></i></a>
+								</div>
+								<div class="button-inline button-user">
+									<a href="#" title="View My Account"><i class="fal fa-user"></i></a>
+								</div>
+								<div class="button-inline button-cart">
+									<a href="#" title="View Cart">
+										<i class="fal fa-shopping-cart"></i>
+										<span class="items-number">0</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .mid-header -->
+		</header><!-- .site-header -->
+
+		<main id="main" class="site-main">
+			<div class="page-title" style="background-image: url(images/page-title.jpg);">
+				<div class="page-title-wrap">
+					<h1>Kids</h1>
+					<p>Discover the new collection of Kids in comfortable fits, perfect for their day to day or special occasions.</p>
+				</div>
+			</div><!-- .page-title -->
+			<div class="main-wrap layout-02">
+				<div class="container">
+					<div class="main-wrap-inner">
+						<div id="primary">
+							<div class="filter-box">
+								<div class="filter-top">
+									<div class="filter-left">
+										<div class="sortby-inner">
+											<a href="#" class="sort">Sort by</a>
+											<div class="sortby-sub">
+												<form action="#" method="GET" class="filter-main">
+													<div class="filter-column">
+														<div class="filter-list hide-input">
+															<div class="field-in field-check">
+																<label for="popular">
+																	<input type="radio" name="type" id="popular">
+																	<span class="sort-name">Sort by Popular</span>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+															<div class="field-in field-check">
+																<label for="rating">
+																	<input type="radio" name="type" id="rating">
+																	<span class="sort-name">Sort by Rating</span>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+															<div class="field-in field-check">
+																<label for="latest">
+																	<input type="radio" name="type" id="latest">
+																	<span class="sort-name">Sort by Latest</span>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+															<div class="field-in field-check">
+																<label for="price_lth">
+																	<input type="radio" name="type" id="price_lth">
+																	<span class="sort-name">Sort by price: low to high</span>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+															<div class="field-in field-check">
+																<label for="price_htl">
+																	<input type="radio" name="type" id="price_htl">
+																	<span class="sort-name">Sort by price: high to low</span>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										<span>Showing 1–12 of 88 results</span>
+									</div>
+									<div class="filter-right">
+										<a href="#" class="active"><i class="fal fa-th-large"></i></a>
+										<a href="#"><i class="fal fa-align-justify"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="site-content">
+								<div class="layout-list">
+									<div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Certified Organic BB Cream"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$45</span>
+									        			<span class="priceSale amout">$25</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 73%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Denim Overalls"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Denim Overalls</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$35</span>
+									        			<span class="priceSale amout">$28</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 93%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Eye Shirt"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Eye Shirt</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$45.80</span>
+									        			<span class="priceSale amout">$31</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 78%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Metallic mini backpack with Patches"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Metallic mini backpack with Patches</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$45</span>
+									        			<span class="priceSale amout">$40</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 82%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Certified Organic BB Cream"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$45</span>
+									        			<span class="priceSale amout">$25</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 73%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="product">
+								        <div class="inner-product">
+								        	<div class="entry-thumbnail">
+								        		<a href="#"><img src="images/product.jpg" alt="Certified Organic BB Cream"></a>
+								        		<div class="entry-action">
+								        			<a href="#" class="wishlist"><i class="fal fa-heart"></i></a>
+								        			<a href="#" class="zoom"><i class="fal fa-search-plus"></i></a>
+								        			<a href="#" class="addcart"><i class="fal fa-shopping-bag"></i></a>
+								        		</div>
+								        	</div>
+								        	<div class="entry-wrap-content">
+								        		<div class="entry-content">
+									        		<div class="product-title">
+									        			<h3 class="entry-title"><a href="#">Certified Organic BB Cream</a></h3>
+									        		</div>
+									        		<div class="product-price">
+									        			<span class="priceCompare amout">$45</span>
+									        			<span class="priceSale amout">$25</span>
+									        		</div>
+									        		<div class="product-rate">
+									        			<span class="star-current" style="width: 73%"></span>
+									        			<span class="star-fill"></span>
+									        		</div>
+									        		<div class="product-stock instock">
+									        			<i class="fal fa-check-circle"></i>
+									        			<span>In stock</span>
+									        		</div>
+									        		<div class="product-description">
+									        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+									        		</div>
+									        		<div class="product-button">
+									        			<a href="#" class="border-btn black add-cart">Add to cart</a>
+									        		</div>
+									        	</div>
+								        	</div>
+								        </div>
+								    </div>
+								</div>
+								<div class="pagination">
+									<a href="#" class="prev"><i class="fal fa-chevron-left"></i>Prev</a>
+									<span>1</span>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#" class="next">Next<i class="fal fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div id="secondary">
+							<div class="sidebar">
+								<aside class="widget">
+									<form action="" class="sidebarFilter">
+										<div class="filter-column">
+											<h3>Categories</h3>
+											<div class="filter-list hide-input">
+												<div class="field-in field-check">
+													<label for="dresses">
+														<input type="checkbox" name="type" id="dresses">Dresses<span>(1)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="handbags">
+														<input type="checkbox" name="type" id="handbags">Handbags<span>(15)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="jackets">
+														<input type="checkbox" name="type" id="jackets">Jackets<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="jeans">
+														<input type="checkbox" name="type" id="jeans">Jeans<span>(31)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="knitwear">
+														<input type="checkbox" name="type" id="knitwear">Knitwear<span>(9)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="pants">
+														<input type="checkbox" name="type" id="pants">Pants<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="shirts">
+														<input type="checkbox" name="type" id="shirts">Shirts<span>(25)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="dresses1">
+														<input type="checkbox" name="type" id="dresses1">Dresses<span>(1)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="handbags1">
+														<input type="checkbox" name="type" id="handbags1">Handbags<span>(15)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="jackets1">
+														<input type="checkbox" name="type" id="jackets1">Jackets<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="jeans1">
+														<input type="checkbox" name="type" id="jeans1">Jeans<span>(31)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="knitwear1">
+														<input type="checkbox" name="type" id="knitwear1">Knitwear<span>(9)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="pants1">
+														<input type="checkbox" name="type" id="pants1">Pants<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="shirts1">
+														<input type="checkbox" name="type" id="shirts1">Shirts<span>(25)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter-column">
+											<h3>Color</h3>
+											<div class="filter-list">
+												<div class="field-in field-radio">
+													<label for="green">
+														<input type="checkbox" name="type" id="green">Green<span>(1)</span>
+														<span class="checkmark" style="background-color: #3cb878;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="black">
+														<input type="checkbox" name="type" id="black">Black<span>(1)</span>
+														<span class="checkmark" style="background-color: #000000;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="blue">
+														<input type="checkbox" name="type" id="blue">Blue<span>(3)</span>
+														<span class="checkmark" style="background-color: #0054a6;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="violet">
+														<input type="checkbox" name="type" id="violet">Violet<span>(6)</span>
+														<span class="checkmark" style="background-color: #8560a8;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="red">
+														<input type="checkbox" name="type" id="red">Red<span>(3)</span>
+														<span class="checkmark" style="background-color: #ed1c24;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="yellow">
+														<input type="checkbox" name="type" id="yellow">Yellow<span>(3)</span>
+														<span class="checkmark" style="background-color: #fbaf5d;"></span>
+													</label>
+												</div>
+												<div class="field-in field-radio">
+													<label for="brown">
+														<input type="checkbox" name="type" id="brown">Brown<span>(6)</span>
+														<span class="checkmark" style="background-color: #a3620a;"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter-column">
+											<h3>Size</h3>
+											<div class="filter-list hide-input">
+												<div class="field-in field-check">
+													<label for="size_xs">
+														<input type="checkbox" name="type" id="size_xs">XS<span>(1)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="size_s">
+														<input type="checkbox" name="type" id="size_s">S<span>(15)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="size_m">
+														<input type="checkbox" name="type" id="size_m">M<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="size_l">
+														<input type="checkbox" name="type" id="size_l">L<span>(31)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="size_xl">
+														<input type="checkbox" name="type" id="size_xl">XL<span>(9)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="size_xxl">
+														<input type="checkbox" name="type" id="size_xxl">XXL<span>(21)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter-column">
+											<h3>Price</h3>
+											<div class="filter-list hide-input">
+												<div class="field-in field-check">
+													<label for="all">
+														<input type="checkbox" name="type" id="all">All<span>(125)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="0_20">
+														<input type="checkbox" name="type" id="0_20">$0 - $20<span>(18)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="20_50">
+														<input type="checkbox" name="type" id="20_50">$20 - $50<span>(23)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="50_70">
+														<input type="checkbox" name="type" id="50_70">$50 - $70<span>(16)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="70_90">
+														<input type="checkbox" name="type" id="70_90">$70 - $90<span>(35)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="filter-column">
+											<h3>Brands</h3>
+											<div class="filter-list hide-input">
+												<div class="field-in field-check">
+													<label for="adidas">
+														<input type="checkbox" name="type" id="adidas">Adidas<span>(7)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="banana">
+														<input type="checkbox" name="type" id="banana">Banana<span>(18)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="calvin_klein">
+														<input type="checkbox" name="type" id="calvin_klein">Calvin Klein<span>(23)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="hugo_boss">
+														<input type="checkbox" name="type" id="hugo_boss">Hugo Boss<span>(16)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="moschino">
+														<input type="checkbox" name="type" id="moschino">Moschino<span>(35)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+												<div class="field-in field-check">
+													<label for="zara">
+														<input type="checkbox" name="type" id="zara">Zara<span>(15)</span>
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</aside>
+								<aside class="widget">
+									<h3 class="widget-title">Feartured Products</h3>
+									<div class="widget-content">
+										<div class="sidebar-product">
+											<div class="thumb"><a href="#" title="Skate t-shirt Keep it Simply"><img src="images/product.jpg" alt="Skate t-shirt Keep it Simply"></a></div>
+											<div class="content">
+												<h4><a href="#" title="Skate t-shirt Keep it Simply">Skate t-shirt Keep it Simply</a></h4>
+												<div class="price">$29.50</div>
+											</div>
+										</div>
+										<div class="sidebar-product">
+											<div class="thumb"><a href="#" title="Quilted vest with hood"><img src="images/product.jpg" alt="Quilted vest with hood"></a></div>
+											<div class="content">
+												<h4><a href="#" title="Quilted vest with hood">Quilted vest with hood</a></h4>
+												<div class="price">$39.50</div>
+											</div>
+										</div>
+										<div class="sidebar-product">
+											<div class="thumb"><a href="#" title="Basic sweater with pockets"><img src="images/product.jpg" alt="Basic sweater with pockets"></a></div>
+											<div class="content">
+												<h4><a href="#" title="Basic sweater with pockets">Basic sweater with pockets</a></h4>
+												<div class="price">$25.00</div>
+											</div>
+										</div>
+									</div>
+								</aside>
+								<aside class="widget">
+									<h3 class="widget-title">CUSTOM CMS BLOCK</h3>
+									<div class="widget-content">
+										<div class="widget-icon-left">
+											<div class="icon"><i class="fal fa-alarm-clock"></i></div>
+											<div class="content">
+												<h4>24/7 support online</h4>
+												<p>Support service that is provided 24 hours a day and 7 days a week</p>
+											</div>
+										</div>
+										<div class="widget-icon-left">
+											<div class="icon"><i class="fal fa-piggy-bank"></i></div>
+											<div class="content">
+												<h4>30 days return</h4>
+												<p>All customized orders can be returned for full refund within 30 days of receipt</p>
+											</div>
+										</div>
+										<div class="widget-icon-left">
+											<div class="icon"><i class="fal fa-credit-card"></i></div>
+											<div class="content">
+												<h4>Secure Payments</h4>
+												<p>The total will be charged to your card when the order is shipped.</p>
+											</div>
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- .main-wrap -->
+		</main><!-- .site-main -->
+
+		<footer id="footer" class="site-footer footer-3">
+			<div class="newsletter-2">
+				<div class="container">
+					<h3 class="widget-title">Sign up for news & get <span>20% off</span></h3>
+					<div class="widget-content">
+						<form action="" method="post">
+						  	<div class="tnp-field tnp-field-email">
+						    	<input type="email" class="tnp-email" name="ne" value="" required placeholder="Your email Address">
+						  	</div>
+						  	<div class="tnp-field tnp-field-submit">
+						    	<input type="submit" class="tnp-submit" value="Subscribe">
+						  	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-main">
+					<div class="row">
+						<div class="col-md-5">
+							<aside class="widget widget-bottom widget-contact">
+								<h3 class="widget-title">Contact Us</h3>
+								<div class="widget-content">
+									<ul>
+										<li><i class="fal fa-map-marker-alt"></i>5th Avenue at St. Marks Place, Cathedral District Brooklyn.</li>
+										<li><i class="fal fa-mobile-android"></i>877-834-1434</li>
+										<li><i class="fal fa-envelope"></i>pixelgeeklab@gmail.com</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-info">
+								<h3 class="widget-title">Company Info</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="#">Affiliates</a></li>
+										<li><a href="#">Corporate Information</a></li>
+										<li><a href="#">Sustainability</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Support</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Customer Service</a></li>
+										<li><a href="#">Shipping</a></li>
+										<li><a href="#">Returns & Exchanges</a></li>
+										<li><a href="#">Gift Cards</a></li>
+										<li><a href="#">Store Finder</a></li>
+										<li><a href="#">Site Map</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-3">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Privacy & Terms</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Privacy & Security</a></li>
+										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#">Policy on Trafficking</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div><!-- .footer-main -->
+				<div class="footer-bottom">
+					<div class="site-brand">
+						<a href="#" title="Figo">Figo</a>
+					</div>
+					<div class="copyright">© 2021 <a href="#">SayGroup</a> - Elite ThemeForest Author</div>
+					<div class="payment"><a href="#"><img src="images/assets/payment.png"></a></div>
+				</div>
+			</div><!-- .container -->
+		</footer><!-- site-footer -->
+	</div><!-- #wrapper -->
+</body>
+</html>

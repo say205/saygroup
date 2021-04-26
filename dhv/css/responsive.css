@@ -1,0 +1,336 @@
+@media only screen and (min-width: 1200px) {
+	.container{
+	    max-width: 1240px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.container{
+		max-width: 100%;
+	}
+	.top-header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+	.top-header .logo img.pc,
+	.top-header .left-menu,
+	.right-menu li{
+		display: none;
+	}
+	.top-header .flex{
+		justify-content: flex-end;
+		padding: 11px 0;
+		position: relative;
+	}
+	.top-header .logo img.mb{
+		display: block;
+		height: 48px;
+	}
+	.top-header .logo{
+		left: 15px;
+		transform: inherit;
+	}
+	.top-header{
+		padding: 0;
+	}
+	.right-menu li{
+		margin-right: 0 !important;
+	}
+	.right-menu li.head-search,
+	.right-menu li.head-bar{
+		display: inline-block;
+	}
+	.head-bar{
+		margin-left: 10px;
+	}
+	.main-menu{
+		position: fixed;
+		top: 48px;
+		right: -100%;
+    	width: 100%;
+    	bottom: 0;
+    	overflow-x: hidden;
+    	overflow-y: auto;
+		background-color: #094484;
+		z-index: 999;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s;
+	}
+	.main-menu.open{
+		opacity: 1;
+		visibility: visible;
+		right: 0px;
+	}
+	.mid-header{
+		position: static;
+	}
+	.mid-header .menu-bg,
+	.main-menu.open .sub-menu,
+	.main-menu.open li h2{
+		display: none;
+	}
+	.main-menu > ul{
+		display: block;
+	}
+	.main-menu li{
+		display: block;
+	    flex: 0 0 100% !important;
+	    max-width: 100% !important;
+	    text-align: left !important;
+	}
+	.main-menu li a{
+		color: #fff;
+		padding: 12px 50px 11px 16px !important;
+		border-top: 1px solid #0454b6;
+    	background: #094484;
+    	font-size: 16px !important;
+    	position: relative;
+	}
+	.mid-header .sub-menu{
+		position: static;
+		display: none;
+		padding: 0;
+	}
+	.main-menu .sub-menu li a{
+		background-color: #fff;
+		color: #7e4649;
+		padding: 13px 32px 12px !important;
+		border-color: #ddd;
+	}
+	.main-menu > ul > li h2{
+		display: none;
+	}
+	.main-menu ul li.has-sub > a:after{
+		content: '\f107';
+		font-family: 'Line Awesome Free';
+    	font-weight: 900;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	width: 48px;
+    	display: block;
+    	text-align: center;
+    	line-height: 46px;
+    	font-size: 24px;
+	}
+	.has-sub a.active:after{
+		transform: rotate(180deg);
+	}
+	.main-menu li.active > a{
+		background-color: #fff;
+	}
+	.main-menu li.active > a:after{
+		background-color: #ddd;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.section-notification .post {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.post.post-notification .entry-description {
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: inherit;
+	    -webkit-box-orient: inherit;
+	    margin-bottom: 0px;
+	    height: auto;
+	}
+	.section-gallery .gallery-item.video {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    padding: 0 15px;
+	}
+	.section-gallery .gallery-item.image,
+	.section-gallery .gallery-item.gallery {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	    padding: 0 15px;
+	}
+	.admissions-bg,
+	.section-affiliated-units h3,
+	.slogan-right{
+		display: none;
+	}
+	.admissions-content {
+	    flex-grow: 1;
+	    padding: 40px 0 0 0;
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.slogan-left {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.admissions-bottom{
+		position: static;
+		padding-right: 0;
+		justify-content: space-between;
+		margin-top: 30px;
+    	padding: 10px 0;
+	}
+	.section-admissions:after{
+		bottom: 0;
+	}
+	.section-gallery .gallery-item{
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.main-slider .item .item-content{
+		max-width: 100%;
+	}
+	.section-blog .post{
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    padding: 0 15px;
+	    margin-bottom: 30px;
+	}
+	.admissions-inner{
+		flex-wrap: wrap;
+	}
+	.section-gallery .gallery-item.image,
+	.section-gallery .gallery-item.gallery{
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.post .entry-description {
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: inherit;
+	    -webkit-box-orient: inherit;
+	    margin-bottom: 20px;
+	    height: auto;
+	}
+	.section.section-blog,
+	.section.section-gallery{
+		padding: 60px 0 30px;
+	}
+	.section-affiliated-units ul{
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	.section-affiliated-units li:after{
+		height: 75px;
+	}
+	.section-affiliated-units li{
+		-webkit-box-flex: 0;
+	    -ms-flex: 0 0 25%;
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	    text-align: center;
+	}
+	.section-affiliated-units li span{
+		width: 100%;
+		display: block;
+	}
+	.footer-info{
+		padding-left: 15px;
+		margin-top: 30px;
+	}
+	.footer-logo{
+		width: 100%;
+		text-align: center;
+	}
+	.footer-top{
+		text-align: center;
+	}
+	.socials{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.section-slogan{
+		padding: 60px 0;
+	}
+	.slogan-left .button-wrap,
+	.main-slider .item .button-wrap{
+		text-align: left;
+	}
+	.section-affiliated-units ul{
+		flex-wrap: wrap;
+	}
+	.section-affiliated-units li {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	.section-affiliated-units li:after{
+		content: '';
+		display: none;
+	}
+	.section-affiliated-units{
+		padding: 40px 0 20px;
+	}
+	.admissions-item {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    padding: 0 15px;
+	    margin-bottom: 30px;
+	}
+	.admissions-item ul li{
+		display: block;
+	}
+	.admissions-bottom > span,
+	.admissions-content h2{
+		font-size: 18px;
+	}
+	.admissions-item{
+		text-align: center;
+	}
+	.admissions-content h2{
+		margin: 0 auto 30px;
+	}
+	.admissions-bottom{
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		margin-top: 0;
+	}
+	.admissions-bottom > span{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.section-admissions:after{
+		height: 90px;
+	}
+	.socials li:not(:last-child) {
+	    margin-right: 15px;
+	}
+	.copyright{
+		padding: 0 15px;
+	}
+	.slogan-left a.btn{
+		padding: 0 40px;
+	}
+}

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figo</title>
+
+	<!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- jQuery -->    
+    <script src="js/jquery-1.12.4.js"></script>
+	<script src="libs/popper/popper.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/slick/jquery.zoom.min.js"></script>
+	<script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <!-- orther script -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header" class="site-header header-3">
+			<div class="mid-header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="site-brand align-left">
+								<a href="#" title="Figo">Figo</a>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<nav class="pri-menu align-center">
+								<ul class="main-menu">
+									<li class="current-menu-item"><a href="#">Home</a></li>
+									<li><a href="#">Men</a></li>
+									<li><a href="#">Woman</a></li>
+									<li>
+										<a href="#">Shop</a>
+										<ul class="sub-menu" style="background-image: url(images/menu-banner.jpg);">
+											<li class="col-sm-3">
+												<a href="#">Shop Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Shop - Archive</a></li>
+													<li><a href="#">Shop - Collection</a></li>
+													<li><a href="#">Shop - Category</a></li>
+													<li><a href="#">Shop - Lookbook</a></li>
+													<li><a href="#">Shop - Left Sidebar</a></li>
+													<li><a href="#">Shop - Right Sidebar</a></li>
+													<li><a href="#">Shop - List</a></li>
+													<li><a href="#">Shop - Grid 3 items</a></li>
+													<li><a href="#">Shop - Grid 4 items</a></li>
+													<li><a href="#">Shop - Grid 5 items</a></li>
+													<li><a href="#">Pagination - Default</a></li>
+													<li><a href="#">Pagination - Load more</a></li>
+													<li><a href="#">Pagination - Infinity Load</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Product Layout</a>
+												<ul class="sub-menu">
+													<li><a href="#">Product - Style 1</a></li>
+													<li><a href="#">Product - Style 2</a></li>
+													<li><a href="#">Product - Style 3</a></li>
+													<li><a href="#">Simple Product</a></li>
+													<li><a href="#">Variable Product</a></li>
+													<li><a href="#">Grouped Product</a></li>
+												</ul>
+											</li>
+											<li class="col-sm-3">
+												<a href="#">Orther Pages</a>
+												<ul class="sub-menu">
+													<li><a href="#">Cart</a></li>
+													<li><a href="#">Checkout</a></li>
+													<li><a href="#">My Account</a></li>
+													<li><a href="#">Wishlist</a></li>
+													<li><a href="#">Order Tracking</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Pages</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav><!-- .pri-menu -->
+						</div>
+						<div class="col-sm-2">
+							<div class="button-icon-header align-right">
+								<div class="button-inline button-serch">
+									<a href="#" title="Search"><i class="fal fa-search"></i></a>
+								</div>
+								<div class="button-inline button-wishlist">
+									<a href="#" title="View Wishlist"><i class="fal fa-heart"></i></a>
+								</div>
+								<div class="button-inline button-user">
+									<a href="#" title="View My Account"><i class="fal fa-user"></i></a>
+								</div>
+								<div class="button-inline button-cart">
+									<a href="#" title="View Cart">
+										<i class="fal fa-shopping-cart"></i>
+										<span class="items-number">0</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</div><!-- .mid-header -->
+		</header><!-- .site-header -->
+
+		<main id="main" class="site-main">
+			<div class="main-wrap">
+				<div class="container">
+					<div class="product-detail-inner layout-01">
+						<div class="product-detail-thumb">
+							<div class="product-main-image">
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+								<div class="item"><img src="images/single-product-big.jpg" alt="Thumbnail"></div>
+							</div><!-- .product-view -->
+							<div class="product-control">
+								<div class="item"><a href="#" class="active" data-index="0"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="1"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="2"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="3"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="4"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="5"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+								<div class="item"><a href="#" data-index="6"><img src="images/single-product-small.jpg" alt="Thumbnail Preview"></a></div>
+							</div><!-- .product-control -->
+							<div class="badge">
+								<span class="hot">Hot</span>
+								<span class="sale">-30%</span>
+							</div><!-- .badge -->
+						</div><!-- .product-detail-inner -->
+						<div class="product-detail-info">
+							<div class="product-title"><h1>Wrap V-neck Dress</h1></div>
+							<div class="product-price">
+			        			<span class="priceCompare amout">$45</span>
+			        			<span class="priceSale amout">$25</span>
+			        		</div>
+			        		<div class="product-rate">
+			        			<span class="star-current" style="width: 73%"></span>
+			        			<span class="star-fill"></span>
+			        			<span class="star-number">(7 customer reviews)</span>
+			        		</div>
+			        		<div class="product-info">
+			        			<p class="availability"><span>Availability:</span> 20 in stock</p>
+			        			<p class="sku"><span>Sku:</span> 2FI467</p>
+			        		</div>
+			        		<div class="product-description">
+			        			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			        		</div>
+			        		<div class="product-notice">
+			        			<p>Hurry up! Sales Ends In</p>
+			        		</div>
+			        		<div class="product-countdown">
+			        			<div class="countdown-data" data-end="1634774400" data-gmt="7">
+									<div class="data"><span class="days time">0</span><span class="text">Days</span></div>
+									<div class="data"><span class="hours time">0</span><span class="text">Hours</span></div>
+									<div class="data"><span class="minutes time">0</span><span class="text">Mins</span></div>
+									<div class="data"><span class="seconds time">0</span><span class="text">Secs</span></div>
+								</div>
+			        		</div>
+			        		<div class="product-order">
+			        			<form action="#" class="addCart">
+			        				<div class="field-group">
+			        					<label for="green">
+			        						<input type="radio" value="green" id="green" name="color">
+			        					</label>
+			        					<label for="brown">
+			        						<input type="radio" value="brown" id="brown" name="color">
+			        					</label>
+			        					<label for="blue">
+			        						<input type="radio" value="blue" id="blue" name="color">
+			        					</label>
+			        					<label for="purple">
+			        						<input type="radio" value="purple" id="purple" name="color">
+			        					</label>
+			        				</div>
+			        				<div class="field-group">
+			        					<label for="size_s">
+			        						<input type="radio" value="size_s" id="size_s" name="size">
+			        					</label>
+			        					<label for="size_m">
+			        						<input type="radio" value="size_m" id="size_m" name="size">
+			        					</label>
+			        					<label for="size_l">
+			        						<input type="radio" value="size_l" id="size_l" name="size">
+			        					</label>
+			        					<label for="size_xl">
+			        						<input type="radio" value="size_xl" id="size_xl" name="size">
+			        					</label>
+			        					<span>Size Guide</span>
+			        				</div>
+			        			</form>
+			        		</div>
+						</div>
+					</div><!-- .product-detail-inner -->
+				</div>
+			</div><!-- .main-wrap -->
+		</main><!-- .site-main -->
+
+		<footer id="footer" class="site-footer footer-3">
+			<div class="newsletter-2">
+				<div class="container">
+					<h3 class="widget-title">Sign up for news & get <span>20% off</span></h3>
+					<div class="widget-content">
+						<form action="" method="post">
+						  	<div class="tnp-field tnp-field-email">
+						    	<input type="email" class="tnp-email" name="ne" value="" required placeholder="Your email Address">
+						  	</div>
+						  	<div class="tnp-field tnp-field-submit">
+						    	<input type="submit" class="tnp-submit" value="Subscribe">
+						  	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer-main">
+					<div class="row">
+						<div class="col-md-5">
+							<aside class="widget widget-bottom widget-contact">
+								<h3 class="widget-title">Contact Us</h3>
+								<div class="widget-content">
+									<ul>
+										<li><i class="fal fa-map-marker-alt"></i>5th Avenue at St. Marks Place, Cathedral District Brooklyn.</li>
+										<li><i class="fal fa-mobile-android"></i>877-834-1434</li>
+										<li><i class="fal fa-envelope"></i>pixelgeeklab@gmail.com</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-info">
+								<h3 class="widget-title">Company Info</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Careers</a></li>
+										<li><a href="#">Press</a></li>
+										<li><a href="#">Affiliates</a></li>
+										<li><a href="#">Corporate Information</a></li>
+										<li><a href="#">Sustainability</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-2">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Support</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Customer Service</a></li>
+										<li><a href="#">Shipping</a></li>
+										<li><a href="#">Returns & Exchanges</a></li>
+										<li><a href="#">Gift Cards</a></li>
+										<li><a href="#">Store Finder</a></li>
+										<li><a href="#">Site Map</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="col-md-3">
+							<aside class="widget widget-bottom widget-support">
+								<h3 class="widget-title">Privacy & Terms</h3>
+								<div class="widget-content">
+									<ul>
+										<li><a href="#">Privacy & Security</a></li>
+										<li><a href="#">Terms & Conditions</a></li>
+										<li><a href="#">Policy on Trafficking</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div><!-- .footer-main -->
+				<div class="footer-bottom">
+					<div class="site-brand">
+						<a href="#" title="Figo">Figo</a>
+					</div>
+					<div class="copyright">© 2021 <a href="#">SayGroup</a> - Elite ThemeForest Author</div>
+					<div class="payment"><a href="#"><img src="images/assets/payment.png"></a></div>
+				</div>
+			</div><!-- .container -->
+		</footer><!-- site-footer -->
+	</div><!-- #wrapper -->
+</body>
+</html>
