@@ -895,6 +895,9 @@ a.btn:hover:before{
     display: -ms-flexbox;
     display: flex;
 }
+.admissions-item:first-child{
+	display: none;
+}
 .admissions-item{
 	-webkit-box-flex: 0;
     -ms-flex: 0 0 33.333333%;

@@ -8,45 +8,48 @@
 			}
 		});
 
-		if ($( window ).width() > 1200) {
-	  		var t=0; // the height of the highest element (after the function runs)
-			var t_elem;  // the highest element (after the function runs)
-			$( '.main-menu .sub-menu' ).each(function () {
-			    var _this = $(this);
-			    if ( _this.outerHeight() > t ) {
-			        t_elem = this;
-			        t = _this.outerHeight();
-			    }
-			    $( '.menu-bg' ).css( 'height', t + 'px' );
-			});
-			$( '.main-menu .sub-menu' ).each(function () {
-				var _this = $(this);
-			    _this.css( 'height', t + 'px' );
-			});
-			$( '.main-menu li h2' ).css( 'height', t + 'px' );
-			$( '.main-menu > ul > li' ).mouseover(function () {
-				$( this ).addClass( 'active' );
-				$( this ).parents( '.main-menu' ).addClass( 'open' );
-				$( this ).parents( '.mid-header' ).addClass( 'open' );
-			});
-			$( '.main-menu > ul > li' ).mouseout(function () {
-				$( this ).removeClass( 'active' );
-				$( this ).parents( '.main-menu' ).removeClass( 'open' );
-				$( this ).parents( '.mid-header' ).removeClass( 'open' );
-			});
-	  	}
+		$( window ).load( function() {
+			if ($( window ).width() > 1200) {
+		  		var t=0; // the height of the highest element (after the function runs)
+				var t_elem;  // the highest element (after the function runs)
+				$( '.main-menu .sub-menu' ).each(function () {
+				    var _this = $(this);
+				    if ( _this.outerHeight() > t ) {
+				        t_elem = this;
+				        t = _this.outerHeight();
+				    }
+				    $( '.menu-bg' ).css( 'height', t + 'px' );
+				});
+				$( '.main-menu .sub-menu' ).each(function () {
+					var _this = $(this);
+				    _this.css( 'height', t + 'px' );
+				});
+				$( '.main-menu li h2' ).css( 'height', t + 'px' );
+				$( '.main-menu > ul > li' ).mouseover(function () {
+					$( this ).addClass( 'active' );
+					$( this ).parents( '.main-menu' ).addClass( 'open' );
+					$( this ).parents( '.mid-header' ).addClass( 'open' );
+				});
+				$( '.main-menu > ul > li' ).mouseout(function () {
+					$( this ).removeClass( 'active' );
+					$( this ).parents( '.main-menu' ).removeClass( 'open' );
+					$( this ).parents( '.mid-header' ).removeClass( 'open' );
+				});
+		  	}
 
-	  	if ($( window ).width() < 1200) {
-	  		$( '.has-sub > a' ).on( 'click', function(e) {
-				e.preventDefault();
-			    $( this ).toggleClass( 'active' );
-			    $( this ).parent().find( '> .sub-menu' ).slideToggle();
-			    $( this ).parent().toggleClass( 'active' );
-			    $( '.has-sub > a' ).not( this ).parent().removeClass( 'active' );
-			    $( '.has-sub > a' ).not( this ).removeClass( 'active' );
-			    $( '.has-sub > a' ).not( this ).parent().find( '> .sub-menu' ).slideUp();
-			});
-	  	}
+		  	if ($( window ).width() < 1200) {
+		  		$( '.has-sub > a' ).on( 'click', function(e) {
+					e.preventDefault();
+				    $( this ).toggleClass( 'active' );
+				    $( this ).parent().find( '> .sub-menu' ).slideToggle();
+				    $( this ).parent().toggleClass( 'active' );
+				    $( '.has-sub > a' ).not( this ).parent().removeClass( 'active' );
+				    $( '.has-sub > a' ).not( this ).removeClass( 'active' );
+				    $( '.has-sub > a' ).not( this ).parent().find( '> .sub-menu' ).slideUp();
+				});
+		  	}
+		});
+		
 
 	  	$( '.head-bar a' ).on( 'click', function(e) {
 			e.preventDefault();

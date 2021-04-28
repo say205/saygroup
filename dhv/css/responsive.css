@@ -280,6 +280,12 @@
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.post .entry-thumb img{
+		height: 150px;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 	.main-slider .item .item-content{
 		max-width: 100%;
@@ -345,17 +351,6 @@
 	.copyright{
 		text-align: left;
 	}
-	.admissions-item{
-		display: none;
-		-webkit-box-flex: 0;
-    	-ms-flex: 0 0 50%;
-    	flex: 0 0 50%;
-    	max-width: 50%;
-	}
-	.admissions-item:nth-child(1),
-	.admissions-item:nth-child(2){
-		display: block;
-	}
 	.admissions-item ul li{
 		display: block;
 	}
@@ -401,14 +396,9 @@
 	.admissions-content h2{
 		font-size: 18px;
 	}
-	.admissions-item:nth-child(1){
-		padding: 0 5px 0 0;
-	}
-	.admissions-item:nth-child(2){
-		padding: 0 0 0 5px;
-	}
 	.admissions-item a.btn{
-		padding: 0 30px;
+		padding: 0 15px;
+		font-size: 14px;
 	}
 	.admissions-content h2{
 		margin: 0 auto 30px;
@@ -455,5 +445,39 @@
 	.slogan-left h2 {
 	    font-size: 24px;
 	    line-height: 32px;
+	}
+	.section-affiliated-units li i{
+		font-size: 70px;
+	}
+	.section-affiliated-units li span br{
+		display: none;
+	}
+	.section-affiliated-units ul{
+		align-items: flex-start;
+	}
+	.admissions-item h3{
+		font-size: 14px;
+	}
+	.admissions-item{
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.admissions-item:first-child{
+		display: block;
+	}
+	.admissions-item a.btn {
+	    padding: 0 15px;
+	    width: 100%;
+	}
+	.admissions-item {
+	    -webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	    margin-top: 30px;
+	}
+	.admissions-content h2{
+		margin-bottom: 0;
 	}
 }
